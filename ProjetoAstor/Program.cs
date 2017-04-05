@@ -16,7 +16,7 @@ namespace ProjetoAstor
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCadastroFuncionario());
+            Application.Run(new ProjetoAstor.Formulários.frmCadastroProduto());
         }
     }
 }

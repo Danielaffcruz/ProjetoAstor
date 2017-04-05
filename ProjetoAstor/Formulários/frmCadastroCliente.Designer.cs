@@ -38,6 +38,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.cliDados = new System.Windows.Forms.TabPage();
             this.grpClientes = new System.Windows.Forms.GroupBox();
+            this.btnPesquisar = new System.Windows.Forms.Button();
             this.lblObservacao = new System.Windows.Forms.Label();
             this.txtObservacao = new System.Windows.Forms.TextBox();
             this.lblSite = new System.Windows.Forms.Label();
@@ -154,7 +155,7 @@
             // 
             this.tabControl1.Controls.Add(this.cliDados);
             this.tabControl1.Controls.Add(this.cliPesquisar);
-            this.tabControl1.Location = new System.Drawing.Point(12, 34);
+            this.tabControl1.Location = new System.Drawing.Point(12, 28);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(725, 364);
@@ -173,6 +174,7 @@
             // 
             // grpClientes
             // 
+            this.grpClientes.Controls.Add(this.btnPesquisar);
             this.grpClientes.Controls.Add(this.lblObservacao);
             this.grpClientes.Controls.Add(this.txtObservacao);
             this.grpClientes.Controls.Add(this.lblSite);
@@ -216,6 +218,15 @@
             this.grpClientes.Size = new System.Drawing.Size(704, 332);
             this.grpClientes.TabIndex = 0;
             this.grpClientes.TabStop = false;
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
+            this.btnPesquisar.Location = new System.Drawing.Point(669, 81);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(24, 24);
+            this.btnPesquisar.TabIndex = 41;
+            this.btnPesquisar.UseVisualStyleBackColor = true;
             // 
             // lblObservacao
             // 
@@ -363,6 +374,7 @@
             // 
             // txtCidade
             // 
+            this.txtCidade.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCidade.Location = new System.Drawing.Point(495, 141);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(128, 20);
@@ -380,6 +392,7 @@
             // 
             // txtBairro
             // 
+            this.txtBairro.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtBairro.Location = new System.Drawing.Point(351, 141);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(128, 20);
@@ -414,6 +427,7 @@
             // 
             // txtEndereco
             // 
+            this.txtEndereco.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtEndereco.Location = new System.Drawing.Point(13, 141);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(219, 20);
@@ -421,7 +435,7 @@
             // 
             // maskedTextBox4
             // 
-            this.maskedTextBox4.Location = new System.Drawing.Point(635, 84);
+            this.maskedTextBox4.Location = new System.Drawing.Point(600, 84);
             this.maskedTextBox4.Mask = "00000-000";
             this.maskedTextBox4.Name = "maskedTextBox4";
             this.maskedTextBox4.Size = new System.Drawing.Size(63, 20);
@@ -431,7 +445,7 @@
             // 
             this.lblCEP.AutoSize = true;
             this.lblCEP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCEP.Location = new System.Drawing.Point(632, 65);
+            this.lblCEP.Location = new System.Drawing.Point(597, 65);
             this.lblCEP.Name = "lblCEP";
             this.lblCEP.Size = new System.Drawing.Size(35, 16);
             this.lblCEP.TabIndex = 16;
@@ -439,7 +453,7 @@
             // 
             // maskedTextBox3
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(297, 84);
+            this.maskedTextBox3.Location = new System.Drawing.Point(281, 84);
             this.maskedTextBox3.Mask = "000.000.00-0";
             this.maskedTextBox3.Name = "maskedTextBox3";
             this.maskedTextBox3.Size = new System.Drawing.Size(72, 20);
@@ -449,7 +463,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(294, 65);
+            this.label2.Location = new System.Drawing.Point(278, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 16);
             this.label2.TabIndex = 14;
@@ -479,7 +493,7 @@
             // 
             // maskedTextBox2
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(528, 84);
+            this.maskedTextBox2.Location = new System.Drawing.Point(506, 84);
             this.maskedTextBox2.Mask = "00.000.000-0";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(72, 20);
@@ -489,7 +503,7 @@
             // 
             this.lblRG.AutoSize = true;
             this.lblRG.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRG.Location = new System.Drawing.Point(525, 65);
+            this.lblRG.Location = new System.Drawing.Point(503, 65);
             this.lblRG.Name = "lblRG";
             this.lblRG.Size = new System.Drawing.Size(28, 16);
             this.lblRG.TabIndex = 10;
@@ -497,7 +511,7 @@
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(408, 84);
+            this.maskedTextBox1.Location = new System.Drawing.Point(394, 84);
             this.maskedTextBox1.Mask = "000.000.000-00";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(85, 20);
@@ -507,7 +521,7 @@
             // 
             this.lblCPF.AutoSize = true;
             this.lblCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPF.Location = new System.Drawing.Point(405, 65);
+            this.lblCPF.Location = new System.Drawing.Point(391, 65);
             this.lblCPF.Name = "lblCPF";
             this.lblCPF.Size = new System.Drawing.Size(34, 16);
             this.lblCPF.TabIndex = 8;
@@ -515,7 +529,7 @@
             // 
             // mskCNPJ
             // 
-            this.mskCNPJ.Location = new System.Drawing.Point(159, 84);
+            this.mskCNPJ.Location = new System.Drawing.Point(143, 84);
             this.mskCNPJ.Mask = "00.000.000/0000-00";
             this.mskCNPJ.Name = "mskCNPJ";
             this.mskCNPJ.Size = new System.Drawing.Size(108, 20);
@@ -525,7 +539,7 @@
             // 
             this.lblCNPJ.AutoSize = true;
             this.lblCNPJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCNPJ.Location = new System.Drawing.Point(156, 69);
+            this.lblCNPJ.Location = new System.Drawing.Point(140, 65);
             this.lblCNPJ.Name = "lblCNPJ";
             this.lblCNPJ.Size = new System.Drawing.Size(43, 16);
             this.lblCNPJ.TabIndex = 6;
@@ -543,6 +557,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox1.Location = new System.Drawing.Point(495, 33);
             this.textBox1.MaxLength = 100;
             this.textBox1.Name = "textBox1";
@@ -561,6 +576,7 @@
             // 
             // txtNome
             // 
+            this.txtNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNome.Location = new System.Drawing.Point(143, 33);
             this.txtNome.MaxLength = 100;
             this.txtNome.Name = "txtNome";
@@ -671,6 +687,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCadastroClientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".:::CADASTRO DE CLIENTE:::.";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -741,5 +758,6 @@
         private System.Windows.Forms.Label lblFiltro;
         private System.Windows.Forms.ComboBox cboOpcao;
         private System.Windows.Forms.Label lblOpcao;
+        private System.Windows.Forms.Button btnPesquisar;
     }
 }

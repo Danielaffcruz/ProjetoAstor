@@ -46,33 +46,69 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmCadastroCliente.cs">
+    <Compile Include="Formulários\frmCadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCadastroCliente.Designer.cs">
+    <Compile Include="Formulários\frmCadastroCliente.Designer.cs">
       <DependentUpon>frmCadastroCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCadastroFuncionario.cs">
+    <Compile Include="Formulários\frmCadastroFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCadastroFuncionario.Designer.cs">
+    <Compile Include="Formulários\frmCadastroFuncionario.Designer.cs">
       <DependentUpon>frmCadastroFuncionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPrincipal.cs">
+    <Compile Include="Formulários\frmCadastroProduto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPrincipal.Designer.cs">
+    <Compile Include="Formulários\frmCadastroProduto.Designer.cs">
+      <DependentUpon>frmCadastroProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\frmCadastroTransportadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\frmCadastroTransportadora.Designer.cs">
+      <DependentUpon>frmCadastroTransportadora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\frmCadastroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\frmCadastroUsuario.Designer.cs">
+      <DependentUpon>frmCadastroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmCadastroCliente.resx">
+    <EmbeddedResource Include="Formulários\frmCadastroCliente.resx">
       <DependentUpon>frmCadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCadastroFuncionario.resx">
+    <EmbeddedResource Include="Formulários\frmCadastroFuncionario.resx">
       <DependentUpon>frmCadastroFuncionario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipal.resx">
+    <EmbeddedResource Include="Formulários\frmCadastroProduto.resx">
+      <DependentUpon>frmCadastroProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\frmCadastroTransportadora.resx">
+      <DependentUpon>frmCadastroTransportadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\frmCadastroUsuario.resx">
+      <DependentUpon>frmCadastroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
