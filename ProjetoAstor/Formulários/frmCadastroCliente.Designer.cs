@@ -38,6 +38,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.cliDados = new System.Windows.Forms.TabPage();
             this.grpClientes = new System.Windows.Forms.GroupBox();
+            this.txtSobrenome = new System.Windows.Forms.TextBox();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.lblObservacao = new System.Windows.Forms.Label();
             this.txtObservacao = new System.Windows.Forms.TextBox();
@@ -55,40 +56,36 @@
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.lblBairro = new System.Windows.Forms.Label();
             this.txtBairro = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblNumero = new System.Windows.Forms.Label();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.lblEndereco = new System.Windows.Forms.Label();
             this.txtEndereco = new System.Windows.Forms.TextBox();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+            this.mskCEP = new System.Windows.Forms.MaskedTextBox();
             this.lblCEP = new System.Windows.Forms.Label();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.mskInsEstadual = new System.Windows.Forms.MaskedTextBox();
+            this.lblInsEstadual = new System.Windows.Forms.Label();
             this.ckbJuridica = new System.Windows.Forms.CheckBox();
             this.ckbFisica = new System.Windows.Forms.CheckBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.lblRG = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.lblCPF = new System.Windows.Forms.Label();
             this.mskCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.lblCNPJ = new System.Windows.Forms.Label();
-            this.lblSobrenome = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtNomeFantasia = new System.Windows.Forms.TextBox();
+            this.lblRazaoSocial = new System.Windows.Forms.Label();
+            this.txtRazaoSocial = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCodigo = new System.Windows.Forms.Label();
             this.cliPesquisar = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.dgvClientes = new System.Windows.Forms.DataGridView();
+            this.txtFiltro = new System.Windows.Forms.TextBox();
             this.lblFiltro = new System.Windows.Forms.Label();
             this.cboOpcao = new System.Windows.Forms.ComboBox();
             this.lblOpcao = new System.Windows.Forms.Label();
+            this.lblNomeFantasia = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.cliDados.SuspendLayout();
             this.grpClientes.SuspendLayout();
             this.cliPesquisar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -174,6 +171,7 @@
             // 
             // grpClientes
             // 
+            this.grpClientes.Controls.Add(this.txtSobrenome);
             this.grpClientes.Controls.Add(this.btnPesquisar);
             this.grpClientes.Controls.Add(this.lblObservacao);
             this.grpClientes.Controls.Add(this.txtObservacao);
@@ -191,38 +189,43 @@
             this.grpClientes.Controls.Add(this.txtCidade);
             this.grpClientes.Controls.Add(this.lblBairro);
             this.grpClientes.Controls.Add(this.txtBairro);
-            this.grpClientes.Controls.Add(this.label3);
+            this.grpClientes.Controls.Add(this.lblNumero);
             this.grpClientes.Controls.Add(this.txtNumero);
             this.grpClientes.Controls.Add(this.lblEndereco);
             this.grpClientes.Controls.Add(this.txtEndereco);
-            this.grpClientes.Controls.Add(this.maskedTextBox4);
+            this.grpClientes.Controls.Add(this.mskCEP);
             this.grpClientes.Controls.Add(this.lblCEP);
-            this.grpClientes.Controls.Add(this.maskedTextBox3);
-            this.grpClientes.Controls.Add(this.label2);
+            this.grpClientes.Controls.Add(this.mskInsEstadual);
+            this.grpClientes.Controls.Add(this.lblInsEstadual);
             this.grpClientes.Controls.Add(this.ckbJuridica);
             this.grpClientes.Controls.Add(this.ckbFisica);
-            this.grpClientes.Controls.Add(this.maskedTextBox2);
-            this.grpClientes.Controls.Add(this.lblRG);
-            this.grpClientes.Controls.Add(this.maskedTextBox1);
-            this.grpClientes.Controls.Add(this.lblCPF);
             this.grpClientes.Controls.Add(this.mskCNPJ);
             this.grpClientes.Controls.Add(this.lblCNPJ);
-            this.grpClientes.Controls.Add(this.lblSobrenome);
-            this.grpClientes.Controls.Add(this.textBox1);
-            this.grpClientes.Controls.Add(this.lblNome);
-            this.grpClientes.Controls.Add(this.txtNome);
+            this.grpClientes.Controls.Add(this.lblNomeFantasia);
+            this.grpClientes.Controls.Add(this.txtNomeFantasia);
+            this.grpClientes.Controls.Add(this.lblRazaoSocial);
+            this.grpClientes.Controls.Add(this.txtRazaoSocial);
             this.grpClientes.Controls.Add(this.txtCodigo);
-            this.grpClientes.Controls.Add(this.label1);
+            this.grpClientes.Controls.Add(this.lblCodigo);
             this.grpClientes.Location = new System.Drawing.Point(7, 0);
             this.grpClientes.Name = "grpClientes";
             this.grpClientes.Size = new System.Drawing.Size(704, 332);
             this.grpClientes.TabIndex = 0;
             this.grpClientes.TabStop = false;
             // 
+            // txtSobrenome
+            // 
+            this.txtSobrenome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtSobrenome.Location = new System.Drawing.Point(414, 33);
+            this.txtSobrenome.MaxLength = 100;
+            this.txtSobrenome.Name = "txtSobrenome";
+            this.txtSobrenome.Size = new System.Drawing.Size(284, 20);
+            this.txtSobrenome.TabIndex = 44;
+            // 
             // btnPesquisar
             // 
             this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
-            this.btnPesquisar.Location = new System.Drawing.Point(669, 81);
+            this.btnPesquisar.Location = new System.Drawing.Point(82, 138);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(24, 24);
             this.btnPesquisar.TabIndex = 41;
@@ -267,7 +270,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(226, 175);
+            this.lblEmail.Location = new System.Drawing.Point(398, 65);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(42, 16);
             this.lblEmail.TabIndex = 33;
@@ -275,14 +278,14 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(229, 192);
+            this.txtEmail.Location = new System.Drawing.Point(401, 85);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(223, 20);
+            this.txtEmail.Size = new System.Drawing.Size(297, 20);
             this.txtEmail.TabIndex = 15;
             // 
             // mskCelular
             // 
-            this.mskCelular.Location = new System.Drawing.Point(117, 191);
+            this.mskCelular.Location = new System.Drawing.Point(356, 191);
             this.mskCelular.Mask = "(00)00000-0000";
             this.mskCelular.Name = "mskCelular";
             this.mskCelular.Size = new System.Drawing.Size(83, 20);
@@ -292,7 +295,7 @@
             // 
             this.lblCelular.AutoSize = true;
             this.lblCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCelular.Location = new System.Drawing.Point(114, 175);
+            this.lblCelular.Location = new System.Drawing.Point(353, 175);
             this.lblCelular.Name = "lblCelular";
             this.lblCelular.Size = new System.Drawing.Size(50, 16);
             this.lblCelular.TabIndex = 30;
@@ -300,7 +303,7 @@
             // 
             // mskTelefone
             // 
-            this.mskTelefone.Location = new System.Drawing.Point(13, 191);
+            this.mskTelefone.Location = new System.Drawing.Point(252, 191);
             this.mskTelefone.Mask = "(00)0000-0000";
             this.mskTelefone.Name = "mskTelefone";
             this.mskTelefone.Size = new System.Drawing.Size(78, 20);
@@ -310,7 +313,7 @@
             // 
             this.lblTelefone.AutoSize = true;
             this.lblTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefone.Location = new System.Drawing.Point(10, 175);
+            this.lblTelefone.Location = new System.Drawing.Point(249, 175);
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(62, 16);
             this.lblTelefone.TabIndex = 28;
@@ -347,7 +350,7 @@
             "SP\t ",
             "SE\t ",
             "TO"});
-            this.cmbEstado.Location = new System.Drawing.Point(639, 139);
+            this.cmbEstado.Location = new System.Drawing.Point(164, 190);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(59, 21);
             this.cmbEstado.TabIndex = 12;
@@ -356,7 +359,7 @@
             // 
             this.lblEstado.AutoSize = true;
             this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado.Location = new System.Drawing.Point(636, 124);
+            this.lblEstado.Location = new System.Drawing.Point(161, 172);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(51, 16);
             this.lblEstado.TabIndex = 26;
@@ -366,7 +369,7 @@
             // 
             this.lblCidade.AutoSize = true;
             this.lblCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCidade.Location = new System.Drawing.Point(492, 124);
+            this.lblCidade.Location = new System.Drawing.Point(10, 172);
             this.lblCidade.Name = "lblCidade";
             this.lblCidade.Size = new System.Drawing.Size(52, 16);
             this.lblCidade.TabIndex = 25;
@@ -375,7 +378,7 @@
             // txtCidade
             // 
             this.txtCidade.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtCidade.Location = new System.Drawing.Point(495, 141);
+            this.txtCidade.Location = new System.Drawing.Point(13, 191);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(128, 20);
             this.txtCidade.TabIndex = 11;
@@ -384,7 +387,7 @@
             // 
             this.lblBairro.AutoSize = true;
             this.lblBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBairro.Location = new System.Drawing.Point(348, 124);
+            this.lblBairro.Location = new System.Drawing.Point(545, 122);
             this.lblBairro.Name = "lblBairro";
             this.lblBairro.Size = new System.Drawing.Size(44, 16);
             this.lblBairro.TabIndex = 23;
@@ -393,24 +396,24 @@
             // txtBairro
             // 
             this.txtBairro.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtBairro.Location = new System.Drawing.Point(351, 141);
+            this.txtBairro.Location = new System.Drawing.Point(548, 142);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(128, 20);
+            this.txtBairro.Size = new System.Drawing.Size(150, 20);
             this.txtBairro.TabIndex = 10;
             // 
-            // label3
+            // lblNumero
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(249, 124);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 16);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Número";
+            this.lblNumero.AutoSize = true;
+            this.lblNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumero.Location = new System.Drawing.Point(439, 122);
+            this.lblNumero.Name = "lblNumero";
+            this.lblNumero.Size = new System.Drawing.Size(56, 16);
+            this.lblNumero.TabIndex = 21;
+            this.lblNumero.Text = "Número";
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(252, 141);
+            this.txtNumero.Location = new System.Drawing.Point(442, 141);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(83, 20);
             this.txtNumero.TabIndex = 9;
@@ -419,7 +422,7 @@
             // 
             this.lblEndereco.AutoSize = true;
             this.lblEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEndereco.Location = new System.Drawing.Point(10, 124);
+            this.lblEndereco.Location = new System.Drawing.Point(125, 122);
             this.lblEndereco.Name = "lblEndereco";
             this.lblEndereco.Size = new System.Drawing.Size(67, 16);
             this.lblEndereco.TabIndex = 19;
@@ -428,46 +431,46 @@
             // txtEndereco
             // 
             this.txtEndereco.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtEndereco.Location = new System.Drawing.Point(13, 141);
+            this.txtEndereco.Location = new System.Drawing.Point(128, 141);
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(219, 20);
+            this.txtEndereco.Size = new System.Drawing.Size(292, 20);
             this.txtEndereco.TabIndex = 8;
             // 
-            // maskedTextBox4
+            // mskCEP
             // 
-            this.maskedTextBox4.Location = new System.Drawing.Point(600, 84);
-            this.maskedTextBox4.Mask = "00000-000";
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(63, 20);
-            this.maskedTextBox4.TabIndex = 7;
+            this.mskCEP.Location = new System.Drawing.Point(13, 141);
+            this.mskCEP.Mask = "00000-000";
+            this.mskCEP.Name = "mskCEP";
+            this.mskCEP.Size = new System.Drawing.Size(63, 20);
+            this.mskCEP.TabIndex = 7;
             // 
             // lblCEP
             // 
             this.lblCEP.AutoSize = true;
             this.lblCEP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCEP.Location = new System.Drawing.Point(597, 65);
+            this.lblCEP.Location = new System.Drawing.Point(10, 122);
             this.lblCEP.Name = "lblCEP";
             this.lblCEP.Size = new System.Drawing.Size(35, 16);
             this.lblCEP.TabIndex = 16;
             this.lblCEP.Text = "CEP";
             // 
-            // maskedTextBox3
+            // mskInsEstadual
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(281, 84);
-            this.maskedTextBox3.Mask = "000.000.00-0";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(72, 20);
-            this.maskedTextBox3.TabIndex = 4;
+            this.mskInsEstadual.Location = new System.Drawing.Point(281, 84);
+            this.mskInsEstadual.Mask = "000.000.00-0";
+            this.mskInsEstadual.Name = "mskInsEstadual";
+            this.mskInsEstadual.Size = new System.Drawing.Size(72, 20);
+            this.mskInsEstadual.TabIndex = 4;
             // 
-            // label2
+            // lblInsEstadual
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(278, 65);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 16);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Insc. Estadual";
+            this.lblInsEstadual.AutoSize = true;
+            this.lblInsEstadual.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInsEstadual.Location = new System.Drawing.Point(278, 65);
+            this.lblInsEstadual.Name = "lblInsEstadual";
+            this.lblInsEstadual.Size = new System.Drawing.Size(91, 16);
+            this.lblInsEstadual.TabIndex = 14;
+            this.lblInsEstadual.Text = "Insc. Estadual";
             // 
             // ckbJuridica
             // 
@@ -491,42 +494,6 @@
             this.ckbFisica.Text = "Pessoa Física";
             this.ckbFisica.UseVisualStyleBackColor = true;
             // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(506, 84);
-            this.maskedTextBox2.Mask = "00.000.000-0";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(72, 20);
-            this.maskedTextBox2.TabIndex = 6;
-            // 
-            // lblRG
-            // 
-            this.lblRG.AutoSize = true;
-            this.lblRG.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRG.Location = new System.Drawing.Point(503, 65);
-            this.lblRG.Name = "lblRG";
-            this.lblRG.Size = new System.Drawing.Size(28, 16);
-            this.lblRG.TabIndex = 10;
-            this.lblRG.Text = "RG";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(394, 84);
-            this.maskedTextBox1.Mask = "000.000.000-00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(85, 20);
-            this.maskedTextBox1.TabIndex = 5;
-            // 
-            // lblCPF
-            // 
-            this.lblCPF.AutoSize = true;
-            this.lblCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPF.Location = new System.Drawing.Point(391, 65);
-            this.lblCPF.Name = "lblCPF";
-            this.lblCPF.Size = new System.Drawing.Size(34, 16);
-            this.lblCPF.TabIndex = 8;
-            this.lblCPF.Text = "CPF";
-            // 
             // mskCNPJ
             // 
             this.mskCNPJ.Location = new System.Drawing.Point(143, 84);
@@ -545,43 +512,33 @@
             this.lblCNPJ.TabIndex = 6;
             this.lblCNPJ.Text = "CNPJ";
             // 
-            // lblSobrenome
+            // txtNomeFantasia
             // 
-            this.lblSobrenome.AutoSize = true;
-            this.lblSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSobrenome.Location = new System.Drawing.Point(492, 16);
-            this.lblSobrenome.Name = "lblSobrenome";
-            this.lblSobrenome.Size = new System.Drawing.Size(79, 16);
-            this.lblSobrenome.TabIndex = 5;
-            this.lblSobrenome.Text = "Sobrenome";
+            this.txtNomeFantasia.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtNomeFantasia.Location = new System.Drawing.Point(414, 33);
+            this.txtNomeFantasia.MaxLength = 100;
+            this.txtNomeFantasia.Name = "txtNomeFantasia";
+            this.txtNomeFantasia.Size = new System.Drawing.Size(284, 20);
+            this.txtNomeFantasia.TabIndex = 2;
             // 
-            // textBox1
+            // lblRazaoSocial
             // 
-            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox1.Location = new System.Drawing.Point(495, 33);
-            this.textBox1.MaxLength = 100;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 20);
-            this.textBox1.TabIndex = 2;
+            this.lblRazaoSocial.AutoSize = true;
+            this.lblRazaoSocial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRazaoSocial.Location = new System.Drawing.Point(140, 16);
+            this.lblRazaoSocial.Name = "lblRazaoSocial";
+            this.lblRazaoSocial.Size = new System.Drawing.Size(89, 16);
+            this.lblRazaoSocial.TabIndex = 3;
+            this.lblRazaoSocial.Text = "Razão Social";
             // 
-            // lblNome
+            // txtRazaoSocial
             // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(140, 16);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(136, 16);
-            this.lblNome.TabIndex = 3;
-            this.lblNome.Text = "Nome / Razão Social";
-            // 
-            // txtNome
-            // 
-            this.txtNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtNome.Location = new System.Drawing.Point(143, 33);
-            this.txtNome.MaxLength = 100;
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(333, 20);
-            this.txtNome.TabIndex = 1;
+            this.txtRazaoSocial.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtRazaoSocial.Location = new System.Drawing.Point(143, 33);
+            this.txtRazaoSocial.MaxLength = 100;
+            this.txtRazaoSocial.Name = "txtRazaoSocial";
+            this.txtRazaoSocial.Size = new System.Drawing.Size(262, 20);
+            this.txtRazaoSocial.TabIndex = 1;
             // 
             // txtCodigo
             // 
@@ -591,21 +548,21 @@
             this.txtCodigo.Size = new System.Drawing.Size(100, 20);
             this.txtCodigo.TabIndex = 1;
             // 
-            // label1
+            // lblCodigo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(55, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Código";
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigo.ForeColor = System.Drawing.Color.Black;
+            this.lblCodigo.Location = new System.Drawing.Point(10, 65);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(58, 16);
+            this.lblCodigo.TabIndex = 0;
+            this.lblCodigo.Text = "Código";
             // 
             // cliPesquisar
             // 
-            this.cliPesquisar.Controls.Add(this.dataGridView1);
-            this.cliPesquisar.Controls.Add(this.textBox2);
+            this.cliPesquisar.Controls.Add(this.dgvClientes);
+            this.cliPesquisar.Controls.Add(this.txtFiltro);
             this.cliPesquisar.Controls.Add(this.lblFiltro);
             this.cliPesquisar.Controls.Add(this.cboOpcao);
             this.cliPesquisar.Controls.Add(this.lblOpcao);
@@ -617,24 +574,24 @@
             this.cliPesquisar.Text = "Pesquisar";
             this.cliPesquisar.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvClientes
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 59);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(705, 273);
-            this.dataGridView1.TabIndex = 4;
+            this.dgvClientes.AllowUserToAddRows = false;
+            this.dgvClientes.AllowUserToDeleteRows = false;
+            this.dgvClientes.AllowUserToOrderColumns = true;
+            this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClientes.Location = new System.Drawing.Point(6, 59);
+            this.dgvClientes.Name = "dgvClientes";
+            this.dgvClientes.ReadOnly = true;
+            this.dgvClientes.Size = new System.Drawing.Size(705, 273);
+            this.dgvClientes.TabIndex = 4;
             // 
-            // textBox2
+            // txtFiltro
             // 
-            this.textBox2.Location = new System.Drawing.Point(206, 32);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(505, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtFiltro.Location = new System.Drawing.Point(206, 32);
+            this.txtFiltro.Name = "txtFiltro";
+            this.txtFiltro.Size = new System.Drawing.Size(505, 20);
+            this.txtFiltro.TabIndex = 3;
             // 
             // lblFiltro
             // 
@@ -677,6 +634,16 @@
             this.lblOpcao.TabIndex = 0;
             this.lblOpcao.Text = "Opção de Pesquisa";
             // 
+            // lblNomeFantasia
+            // 
+            this.lblNomeFantasia.AutoSize = true;
+            this.lblNomeFantasia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeFantasia.Location = new System.Drawing.Point(411, 16);
+            this.lblNomeFantasia.Name = "lblNomeFantasia";
+            this.lblNomeFantasia.Size = new System.Drawing.Size(100, 16);
+            this.lblNomeFantasia.TabIndex = 5;
+            this.lblNomeFantasia.Text = "Nome Fantásia";
+            // 
             // frmCadastroClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -697,7 +664,7 @@
             this.grpClientes.PerformLayout();
             this.cliPesquisar.ResumeLayout(false);
             this.cliPesquisar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -714,21 +681,16 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage cliDados;
         private System.Windows.Forms.GroupBox grpClientes;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.Label lblCPF;
         private System.Windows.Forms.MaskedTextBox mskCNPJ;
         private System.Windows.Forms.Label lblCNPJ;
-        private System.Windows.Forms.Label lblSobrenome;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtNomeFantasia;
+        private System.Windows.Forms.Label lblRazaoSocial;
+        private System.Windows.Forms.TextBox txtRazaoSocial;
         private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.TabPage cliPesquisar;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.Label lblRG;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.MaskedTextBox mskInsEstadual;
+        private System.Windows.Forms.Label lblInsEstadual;
         private System.Windows.Forms.CheckBox ckbJuridica;
         private System.Windows.Forms.CheckBox ckbFisica;
         private System.Windows.Forms.Label lblObservacao;
@@ -747,17 +709,19 @@
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Label lblBairro;
         private System.Windows.Forms.TextBox txtBairro;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Label lblEndereco;
         private System.Windows.Forms.TextBox txtEndereco;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
+        private System.Windows.Forms.MaskedTextBox mskCEP;
         private System.Windows.Forms.Label lblCEP;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label lblFiltro;
+        private System.Windows.Forms.DataGridView dgvClientes;
+        private System.Windows.Forms.TextBox txtFiltro;
         private System.Windows.Forms.ComboBox cboOpcao;
         private System.Windows.Forms.Label lblOpcao;
         private System.Windows.Forms.Button btnPesquisar;
+        private System.Windows.Forms.Label lblFiltro;
+        private System.Windows.Forms.TextBox txtSobrenome;
+        private System.Windows.Forms.Label lblNomeFantasia;
     }
 }

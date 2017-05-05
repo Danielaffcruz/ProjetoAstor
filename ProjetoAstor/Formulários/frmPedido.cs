@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProjetoAstor.Formulários
 {
-    public partial class frmCadastroProduto : Form
+    public partial class frmPedido : Form
     {
-        public frmCadastroProduto()
+        public frmPedido()
         {
             InitializeComponent();
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

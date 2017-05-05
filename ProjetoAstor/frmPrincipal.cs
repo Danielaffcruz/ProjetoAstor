@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProjetoAstor.Formulários
+namespace ProjetoAstor
 {
-    public partial class frmCadastroProduto : Form
+    public partial class frmPrincipal : Form
     {
-        public frmCadastroProduto()
+        public frmPrincipal()
         {
             InitializeComponent();
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

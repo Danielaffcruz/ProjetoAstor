@@ -108,7 +108,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(263, 261);
+            this.ControlBox = false;
             this.Controls.Add(this.grpDados);
             this.Name = "frmLogin";
             this.Text = ".:::LOGIN:::.";
