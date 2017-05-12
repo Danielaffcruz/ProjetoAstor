@@ -16,5 +16,10 @@ namespace ProjetoAstor.Formulários
         {
             InitializeComponent();
         }
+
+        private void txtPesoTotal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
