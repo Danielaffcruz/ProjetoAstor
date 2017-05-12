@@ -38,6 +38,15 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.pedDados = new System.Windows.Forms.TabPage();
             this.grpOrcamento = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dtpPeçasAdiantar = new System.Windows.Forms.DateTimePicker();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.ckbBaixoRelevoSeco = new System.Windows.Forms.CheckBox();
+            this.ckbSilk = new System.Windows.Forms.CheckBox();
             this.cboTransporte = new System.Windows.Forms.ComboBox();
             this.lblTransporte = new System.Windows.Forms.Label();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -68,15 +77,7 @@
             this.lblFiltro = new System.Windows.Forms.Label();
             this.cboOpcao = new System.Windows.Forms.ComboBox();
             this.lblOpcao = new System.Windows.Forms.Label();
-            this.ckbBaixoRelevoSeco = new System.Windows.Forms.CheckBox();
-            this.ckbSilk = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.dtpPeçasAdiantar = new System.Windows.Forms.DateTimePicker();
+            this.tstGerarOS = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.pedDados.SuspendLayout();
@@ -92,6 +93,7 @@
             this.btnNovo,
             this.tstSalvar,
             this.tstExcluir,
+            this.tstGerarOS,
             this.toolStripSeparator1,
             this.tstSair});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
@@ -206,6 +208,93 @@
             this.grpOrcamento.TabIndex = 0;
             this.grpOrcamento.TabStop = false;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(572, 205);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(28, 16);
+            this.label7.TabIndex = 85;
+            this.label7.Text = "Até";
+            // 
+            // dtpPeçasAdiantar
+            // 
+            this.dtpPeçasAdiantar.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpPeçasAdiantar.Location = new System.Drawing.Point(575, 223);
+            this.dtpPeçasAdiantar.Name = "dtpPeçasAdiantar";
+            this.dtpPeçasAdiantar.Size = new System.Drawing.Size(112, 20);
+            this.dtpPeçasAdiantar.TabIndex = 84;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Enabled = false;
+            this.textBox2.Location = new System.Drawing.Point(352, 224);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(200, 20);
+            this.textBox2.TabIndex = 83;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(349, 205);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(111, 16);
+            this.label4.TabIndex = 82;
+            this.label4.Text = "Peças à Adiantar";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(352, 179);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(335, 20);
+            this.textBox1.TabIndex = 81;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(349, 160);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 16);
+            this.label3.TabIndex = 80;
+            this.label3.Text = "Ordem Cores Silk";
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox4.Location = new System.Drawing.Point(217, 180);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(97, 20);
+            this.checkBox4.TabIndex = 79;
+            this.checkBox4.Text = "Relevo/Silk";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // ckbBaixoRelevoSeco
+            // 
+            this.ckbBaixoRelevoSeco.AutoSize = true;
+            this.ckbBaixoRelevoSeco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbBaixoRelevoSeco.Location = new System.Drawing.Point(90, 180);
+            this.ckbBaixoRelevoSeco.Name = "ckbBaixoRelevoSeco";
+            this.ckbBaixoRelevoSeco.Size = new System.Drawing.Size(106, 20);
+            this.ckbBaixoRelevoSeco.TabIndex = 78;
+            this.ckbBaixoRelevoSeco.Text = "Relevo Seco";
+            this.ckbBaixoRelevoSeco.UseVisualStyleBackColor = true;
+            // 
+            // ckbSilk
+            // 
+            this.ckbSilk.AutoSize = true;
+            this.ckbSilk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbSilk.Location = new System.Drawing.Point(13, 180);
+            this.ckbSilk.Name = "ckbSilk";
+            this.ckbSilk.Size = new System.Drawing.Size(49, 20);
+            this.ckbSilk.TabIndex = 77;
+            this.ckbSilk.Text = "Silk";
+            this.ckbSilk.UseVisualStyleBackColor = true;
+            // 
             // cboTransporte
             // 
             this.cboTransporte.FormattingEnabled = true;
@@ -267,7 +356,6 @@
             this.ckbEtiquetaPapelao.TabIndex = 70;
             this.ckbEtiquetaPapelao.Text = "Etiqueta";
             this.ckbEtiquetaPapelao.UseVisualStyleBackColor = true;
-
             // 
             // ckbAdiantamento
             // 
@@ -495,22 +583,17 @@
             // 
             this.cboOpcao.FormattingEnabled = true;
             this.cboOpcao.Items.AddRange(new object[] {
-            "CÓDIGO",
-            "NOME",
-            "SOBRENOME",
-            "CNPJ",
-            "INS. ESTADUAL",
-            "CPF",
-            "RG",
-            "CIDADE",
-            "E-MAIL",
-            "PESSOA FÍSICA",
-            "PESSOA JURÍDICA"});
+            "CLIENTE",
+            "PRODUTO",
+            "TOTAL DE ITENS",
+            "TRANSPORTADORA",
+            "ADIANTAMENTO",
+            "OBSERVAÇÃO"});
             this.cboOpcao.Location = new System.Drawing.Point(10, 32);
             this.cboOpcao.Name = "cboOpcao";
             this.cboOpcao.Size = new System.Drawing.Size(156, 21);
             this.cboOpcao.TabIndex = 1;
-            this.cboOpcao.Text = "NOME";
+            this.cboOpcao.Text = "CLIENTE";
             // 
             // lblOpcao
             // 
@@ -522,92 +605,14 @@
             this.lblOpcao.TabIndex = 0;
             this.lblOpcao.Text = "Opção de Pesquisa";
             // 
-            // ckbBaixoRelevoSeco
+            // tstGerarOS
             // 
-            this.ckbBaixoRelevoSeco.AutoSize = true;
-            this.ckbBaixoRelevoSeco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckbBaixoRelevoSeco.Location = new System.Drawing.Point(90, 180);
-            this.ckbBaixoRelevoSeco.Name = "ckbBaixoRelevoSeco";
-            this.ckbBaixoRelevoSeco.Size = new System.Drawing.Size(106, 20);
-            this.ckbBaixoRelevoSeco.TabIndex = 78;
-            this.ckbBaixoRelevoSeco.Text = "Relevo Seco";
-            this.ckbBaixoRelevoSeco.UseVisualStyleBackColor = true;
-            // 
-            // ckbSilk
-            // 
-            this.ckbSilk.AutoSize = true;
-            this.ckbSilk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckbSilk.Location = new System.Drawing.Point(13, 180);
-            this.ckbSilk.Name = "ckbSilk";
-            this.ckbSilk.Size = new System.Drawing.Size(49, 20);
-            this.ckbSilk.TabIndex = 77;
-            this.ckbSilk.Text = "Silk";
-            this.ckbSilk.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(217, 180);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(97, 20);
-            this.checkBox4.TabIndex = 79;
-            this.checkBox4.Text = "Relevo/Silk";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(352, 179);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(335, 20);
-            this.textBox1.TabIndex = 81;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(349, 160);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 16);
-            this.label3.TabIndex = 80;
-            this.label3.Text = "Ordem Cores Silk";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(352, 224);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 20);
-            this.textBox2.TabIndex = 83;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(349, 205);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 16);
-            this.label4.TabIndex = 82;
-            this.label4.Text = "Peças à Adiantar";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(572, 205);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(28, 16);
-            this.label7.TabIndex = 85;
-            this.label7.Text = "Até";
-            // 
-            // dtpPeçasAdiantar
-            // 
-            this.dtpPeçasAdiantar.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpPeçasAdiantar.Location = new System.Drawing.Point(575, 223);
-            this.dtpPeçasAdiantar.Name = "dtpPeçasAdiantar";
-            this.dtpPeçasAdiantar.Size = new System.Drawing.Size(112, 20);
-            this.dtpPeçasAdiantar.TabIndex = 84;
+            this.tstGerarOS.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tstGerarOS.Image = ((System.Drawing.Image)(resources.GetObject("tstGerarOS.Image")));
+            this.tstGerarOS.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tstGerarOS.Name = "tstGerarOS";
+            this.tstGerarOS.Size = new System.Drawing.Size(89, 22);
+            this.tstGerarOS.Text = "Ordem Serviço";
             // 
             // frmPedido
             // 
@@ -683,5 +688,6 @@
         private System.Windows.Forms.DateTimePicker dtpPeçasAdiantar;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ToolStripButton tstGerarOS;
     }
 }
